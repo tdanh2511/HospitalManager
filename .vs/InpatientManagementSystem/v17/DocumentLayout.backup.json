@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\inpatientmanagementsystem\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|e:\\codetest\\inpatientmanagement\\inpatientmanagementsystem\\inpatientmanagementsystem\\ui\\formdanhmucthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\ui\\formdanhmucthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\inpatientmanagementsystem\\ui\\formdanhmucthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\ui\\formdanhmucthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\inpatientmanagementsystem\\bus\\benhnhanbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\bus\\benhnhanbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\inpatientmanagementsystem\\dao\\benhnhandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\dao\\benhnhandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\inpatientmanagementsystem\\dto\\benhnhandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\dto\\benhnhandto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\inpatientmanagementsystem\\ui\\formbenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\ui\\formbenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\inpatientmanagementsystem\\dao\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\dao\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\inpatientmanagementsystem\\ui\\formbenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\ui\\formbenhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\inpatientmanagementsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FB908102-0D54-4862-9F92-EB5A199C652B}|InpatientManagementSystem\\InpatientManagementSystem.csproj|solutionrelative:inpatientmanagementsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormDanhMucThuoc.cs [Design]",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\FormDanhMucThuoc.cs",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\UI\\FormDanhMucThuoc.cs",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\FormDanhMucThuoc.cs [Design]",
+              "RelativeToolTip": "InpatientManagementSystem\\UI\\FormDanhMucThuoc.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T14:49:04.591Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormBenhNhan.cs",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\FormBenhNhan.cs",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\UI\\FormBenhNhan.cs",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\FormBenhNhan.cs",
+              "RelativeToolTip": "InpatientManagementSystem\\UI\\FormBenhNhan.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T05:53:28.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BenhNhanBUS.cs",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\BUS\\BenhNhanBUS.cs",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\BUS\\BenhNhanBUS.cs",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\BUS\\BenhNhanBUS.cs",
+              "RelativeToolTip": "InpatientManagementSystem\\BUS\\BenhNhanBUS.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAYwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T05:00:54.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DBConnection.cs",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\DAO\\DBConnection.cs",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\DAO\\DBConnection.cs",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\DAO\\DBConnection.cs",
+              "RelativeToolTip": "InpatientManagementSystem\\DAO\\DBConnection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:57:46.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.config",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\App.config",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\App.config",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\App.config",
+              "RelativeToolTip": "InpatientManagementSystem\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-03T04:50:01.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BenhNhanDAO.cs",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\DAO\\BenhNhanDAO.cs",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\DAO\\BenhNhanDAO.cs",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\DAO\\BenhNhanDAO.cs",
+              "RelativeToolTip": "InpatientManagementSystem\\DAO\\BenhNhanDAO.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:46:16.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\Program.cs",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\UI\\Program.cs",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\Program.cs",
+              "RelativeToolTip": "InpatientManagementSystem\\UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:41:36.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormDanhMucThuoc.cs",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\FormDanhMucThuoc.cs",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\UI\\FormDanhMucThuoc.cs",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\FormDanhMucThuoc.cs",
+              "RelativeToolTip": "InpatientManagementSystem\\UI\\FormDanhMucThuoc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T14:49:25.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BenhNhanDTO.cs",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\DTO\\BenhNhanDTO.cs",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\DTO\\BenhNhanDTO.cs",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\DTO\\BenhNhanDTO.cs",
+              "RelativeToolTip": "InpatientManagementSystem\\DTO\\BenhNhanDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:43:32.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormBenhNhan.cs [Design]",
+              "DocumentMoniker": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\FormBenhNhan.cs",
+              "RelativeDocumentMoniker": "InpatientManagementSystem\\UI\\FormBenhNhan.cs",
+              "ToolTip": "E:\\CodeTest\\InpatientManagement\\InpatientManagementSystem\\InpatientManagementSystem\\UI\\FormBenhNhan.cs [Design]",
+              "RelativeToolTip": "InpatientManagementSystem\\UI\\FormBenhNhan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T04:18:32.298Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
