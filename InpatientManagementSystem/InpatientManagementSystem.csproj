@@ -239,10 +239,6 @@
     <EmbeddedResource Include="UI\FormXuatVien.resx">
       <DependentUpon>FormXuatVien.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="DANHSACH_FILE.md" />
-    <None Include="FIX_LOI_3_FORM.md" />
-    <None Include="HUONGDAN_CACMODULE.md" />
-    <None Include="HUONGDAN_TAO_UI_CONTROLS.md" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
