@@ -96,9 +96,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BenhNhanBUS.cs" />
+    <Compile Include="BUS\DichVuBUS.cs" />
+    <Compile Include="BUS\NguoiDungBUS.cs" />
+    <Compile Include="BUS\PhongBUS.cs" />
+    <Compile Include="BUS\ThuocBUS.cs" />
     <Compile Include="DAO\BenhNhanDAO.cs" />
     <Compile Include="DAO\DBConnection.cs" />
+    <Compile Include="DAO\DichVuDAO.cs" />
+    <Compile Include="DAO\NguoiDungDAO.cs" />
+    <Compile Include="DAO\PhongDAO.cs" />
+    <Compile Include="DAO\ThuocDAO.cs" />
     <Compile Include="DTO\BenhNhanDTO.cs" />
+    <Compile Include="DTO\DichVuDTO.cs" />
+    <Compile Include="DTO\NguoiDungDTO.cs" />
+    <Compile Include="DTO\PhongDTO.cs" />
+    <Compile Include="DTO\ThuocDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\FormQuanLyBacSi.cs">
       <SubType>Form</SubType>
@@ -227,6 +239,10 @@
     <EmbeddedResource Include="UI\FormXuatVien.resx">
       <DependentUpon>FormXuatVien.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="DANHSACH_FILE.md" />
+    <None Include="FIX_LOI_3_FORM.md" />
+    <None Include="HUONGDAN_CACMODULE.md" />
+    <None Include="HUONGDAN_TAO_UI_CONTROLS.md" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -241,6 +257,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

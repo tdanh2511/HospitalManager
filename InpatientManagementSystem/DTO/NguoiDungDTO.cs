@@ -1,0 +1,17 @@
+using System;
+
+namespace InpatientManagementSystem.DTO
+{
+    public class NguoiDungDTO
+    {
+        public string MaNguoiDung { get; set; }
+        public string TenDangNhap { get; set; }
+        public string MatKhau { get; set; }
+    public string HoTen { get; set; }
+     public string VaiTro { get; set; } // Admin, BacSi, LeTan
+        public string Email { get; set; }
+  public string SoDienThoai { get; set; }
+        public bool TrangThai { get; set; }
+        public DateTime NgayTao { get; set; }
+    }
+}

@@ -1,13 +1,264 @@
+using InpatientManagementSystem.BUS;
+using InpatientManagementSystem.DTO;
 using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Quan_li_benh_vien
 {
     public partial class FormDanhMucThuoc : Form
     {
-   public FormDanhMucThuoc()
+        private ThuocBUS thuocBUS = new ThuocBUS();
+        private string maThuocDangChon = "";
+
+        public FormDanhMucThuoc()
         {
             InitializeComponent();
-    }
+        }
+
+        private void FormDanhMucThuoc_Load(object sender, EventArgs e)
+        {
+            LoadDanhSach();
+            ClearForm();
+        }
+
+        // Thêm thuốc
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ThuocDTO thuoc = new ThuocDTO
+                {
+                    TenThuoc = txtTenThuoc.Text.Trim(),
+                    DonViTinh = txtDonViTinh.Text.Trim(),
+                    DonGia = decimal.Parse(txtDonGia.Text.Trim()),
+                    SoLuongTon = int.Parse(txtSoLuongTon.Text.Trim()),
+                    HangSanXuat = txtHangSanXuat.Text.Trim(),
+                    CongDung = txtCongDung.Text.Trim(),
+                    NgayHetHan = dtpNgayHetHan.Value,
+                    TrangThai = chkTrangThai.Checked
+                };
+
+                bool result = thuocBUS.ThemThuoc(thuoc);
+
+                if (result)
+                {
+                    MessageBox.Show("Thêm thuốc thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadDanhSach();
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm thuốc thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Sửa thuốc
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(maThuocDangChon))
+                {
+                    MessageBox.Show("Vui lòng chọn thuốc cần sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                ThuocDTO thuoc = new ThuocDTO
+                {
+                    MaThuoc = maThuocDangChon,
+                    TenThuoc = txtTenThuoc.Text.Trim(),
+                    DonViTinh = txtDonViTinh.Text.Trim(),
+                    DonGia = decimal.Parse(txtDonGia.Text.Trim()),
+                    SoLuongTon = int.Parse(txtSoLuongTon.Text.Trim()),
+                    HangSanXuat = txtHangSanXuat.Text.Trim(),
+                    CongDung = txtCongDung.Text.Trim(),
+                    NgayHetHan = dtpNgayHetHan.Value,
+                    TrangThai = chkTrangThai.Checked
+                };
+
+                bool result = thuocBUS.CapNhatThuoc(thuoc);
+
+                if (result)
+                {
+                    MessageBox.Show("Cập nhật thuốc thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadDanhSach();
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật thuốc thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Xóa thuốc
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(maThuocDangChon))
+                {
+                    MessageBox.Show("Vui lòng chọn thuốc cần xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                DialogResult dialogResult = MessageBox.Show(
+                    "Bạn có chắc chắn muốn xóa thuốc này?",
+                    "Xác nhận xóa",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+                if (dialogResult == DialogResult.Yes)
+                {
+                    bool result = thuocBUS.XoaThuoc(maThuocDangChon);
+
+                    if (result)
+                    {
+                        MessageBox.Show("Xóa thuốc thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadDanhSach();
+                        ClearForm();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa thuốc thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Tìm kiếm thuốc
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string keyword = txtTimKiem.Text.Trim();
+                List<ThuocDTO> danhSach = thuocBUS.TimKiemThuoc(keyword);
+
+                dgvThuoc.DataSource = null;
+                dgvThuoc.DataSource = danhSach;
+
+                CustomizeDataGridView();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi tìm kiếm: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Làm mới
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            LoadDanhSach();
+            ClearForm();
+            txtTimKiem.Clear();
+        }
+
+        // Load danh sách
+        private void LoadDanhSach()
+        {
+            try
+            {
+                List<ThuocDTO> danhSach = thuocBUS.LayDanhSachThuoc();
+                dgvThuoc.DataSource = null;
+                dgvThuoc.DataSource = danhSach;
+
+                CustomizeDataGridView();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi load danh sách: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Tùy chỉnh DataGridView
+        private void CustomizeDataGridView()
+        {
+            if (dgvThuoc.Columns.Count > 0)
+            {
+                dgvThuoc.Columns["MaThuoc"].HeaderText = "Mã thuốc";
+                dgvThuoc.Columns["MaThuoc"].Width = 80;
+
+                dgvThuoc.Columns["TenThuoc"].HeaderText = "Tên thuốc";
+                dgvThuoc.Columns["TenThuoc"].Width = 150;
+
+                dgvThuoc.Columns["DonViTinh"].HeaderText = "ĐVT";
+                dgvThuoc.Columns["DonViTinh"].Width = 60;
+
+                dgvThuoc.Columns["DonGia"].HeaderText = "Đơn giá";
+                dgvThuoc.Columns["DonGia"].Width = 100;
+                dgvThuoc.Columns["DonGia"].DefaultCellStyle.Format = "N0";
+
+                dgvThuoc.Columns["SoLuongTon"].HeaderText = "SL tồn";
+                dgvThuoc.Columns["SoLuongTon"].Width = 80;
+
+                dgvThuoc.Columns["HangSanXuat"].HeaderText = "Hãng SX";
+                dgvThuoc.Columns["HangSanXuat"].Width = 120;
+
+                dgvThuoc.Columns["CongDung"].HeaderText = "Công dụng";
+                dgvThuoc.Columns["CongDung"].Width = 150;
+
+                dgvThuoc.Columns["NgayHetHan"].HeaderText = "Ngày hết hạn";
+                dgvThuoc.Columns["NgayHetHan"].Width = 100;
+                dgvThuoc.Columns["NgayHetHan"].DefaultCellStyle.Format = "dd/MM/yyyy";
+
+                dgvThuoc.Columns["TrangThai"].HeaderText = "Trạng thái";
+                dgvThuoc.Columns["TrangThai"].Width = 80;
+            }
+        }
+
+        // Click vào dòng
+        private void dgvThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow row = dgvThuoc.Rows[e.RowIndex];
+
+                    maThuocDangChon = row.Cells["MaThuoc"].Value.ToString();
+                    txtTenThuoc.Text = row.Cells["TenThuoc"].Value.ToString();
+                    txtDonViTinh.Text = row.Cells["DonViTinh"].Value.ToString();
+                    txtDonGia.Text = row.Cells["DonGia"].Value.ToString();
+                    txtSoLuongTon.Text = row.Cells["SoLuongTon"].Value.ToString();
+                    txtHangSanXuat.Text = row.Cells["HangSanXuat"].Value.ToString();
+                    txtCongDung.Text = row.Cells["CongDung"].Value.ToString();
+                    dtpNgayHetHan.Value = Convert.ToDateTime(row.Cells["NgayHetHan"].Value);
+                    chkTrangThai.Checked = Convert.ToBoolean(row.Cells["TrangThai"].Value);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Xóa form
+        private void ClearForm()
+        {
+            maThuocDangChon = "";
+            txtTenThuoc.Clear();
+            txtDonViTinh.Clear();
+            txtDonGia.Clear();
+            txtSoLuongTon.Clear();
+            txtHangSanXuat.Clear();
+            txtCongDung.Clear();
+            dtpNgayHetHan.Value = DateTime.Now.AddYears(1);
+            chkTrangThai.Checked = true;
+            txtTenThuoc.Focus();
+        }
     }
 }
