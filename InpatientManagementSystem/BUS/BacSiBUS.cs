@@ -28,10 +28,60 @@ namespace InpatientManagementSystem.BUS
             return bacSiDAO.Insert(bacSiDTO);
         }
 
+        // Cập nhật bác sĩ
+        public bool CapNhatBacSi(BacSiDTO bacSiDTO)
+        {
+            if (bacSiDTO.MaBacSi <= 0 ||
+                bacSiDTO.KinhNghiem < 0 ||
+                bacSiDTO.NgaySinh == default(DateTime) ||
+                string.IsNullOrEmpty(bacSiDTO.GioiTinh) ||
+                string.IsNullOrEmpty(bacSiDTO.CMNDCCCD) ||
+                string.IsNullOrEmpty(bacSiDTO.DiaChi) ||
+                string.IsNullOrEmpty(bacSiDTO.ChuyenKhoa))
+            {
+                throw new ArgumentException("Thông tin bác sĩ không hợp lệ.");
+            }
+
+            return bacSiDAO.Update(bacSiDTO);
+        }
+
+        // Xóa bác sĩ
+        public bool XoaBacSi(int maBacSi)
+        {
+            if (maBacSi <= 0)
+            {
+                throw new ArgumentException("Mã bác sĩ không hợp lệ.");
+            }
+
+            return bacSiDAO.Delete(maBacSi);
+        }
+
+        // Lấy bác sĩ theo mã
+        public BacSiDTO LayBacSiTheoMa(int maBacSi)
+        {
+            if (maBacSi <= 0)
+            {
+                throw new ArgumentException("Mã bác sĩ không hợp lệ.");
+            }
+
+            return bacSiDAO.GetById(maBacSi);
+        }
+
         // Lấy danh sách bác sĩ
         public List<BacSiDTO> LayDanhSachBacSi()
         {
             return bacSiDAO.GetAll();
+        }
+
+        // Tìm kiếm bác sĩ
+        public List<BacSiDTO> TimKiemBacSi(string keyword)
+        {
+            if (string.IsNullOrEmpty(keyword))
+            {
+                return LayDanhSachBacSi();
+            }
+
+            return bacSiDAO.Search(keyword);
         }
     }
 }
