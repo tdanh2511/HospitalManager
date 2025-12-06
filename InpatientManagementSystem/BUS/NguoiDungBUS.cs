@@ -10,68 +10,68 @@ namespace InpatientManagementSystem.BUS
         private NguoiDungDAO nguoiDungDAO = new NguoiDungDAO();
 
         // Thêm người dùng
-      public bool ThemNguoiDung(NguoiDungDTO nguoiDungDTO)
+        public bool ThemNguoiDung(NguoiDungDTO nguoiDungDTO)
         {
-       if (string.IsNullOrEmpty(nguoiDungDTO.TenDangNhap) ||
-         string.IsNullOrEmpty(nguoiDungDTO.MatKhau) ||
-     string.IsNullOrEmpty(nguoiDungDTO.HoTen) ||
-     string.IsNullOrEmpty(nguoiDungDTO.VaiTro))
- {
-          throw new ArgumentException("Thông tin người dùng không hợp lệ.");
+            if (string.IsNullOrEmpty(nguoiDungDTO.TenDangNhap) ||
+                string.IsNullOrEmpty(nguoiDungDTO.MatKhau) ||
+                string.IsNullOrEmpty(nguoiDungDTO.HoTen) ||
+                string.IsNullOrEmpty(nguoiDungDTO.VaiTro))
+            {
+                throw new ArgumentException("Thông tin người dùng không hợp lệ.");
             }
 
-    return nguoiDungDAO.Insert(nguoiDungDTO);
-    }
-
-  // Lấy tất cả người dùng
-  public List<NguoiDungDTO> LayDanhSachNguoiDung()
-        {
- return nguoiDungDAO.GetAll();
+            return nguoiDungDAO.Insert(nguoiDungDTO);
         }
 
-      // Lấy người dùng theo mã
+        // Lấy tất cả người dùng
+        public List<NguoiDungDTO> LayDanhSachNguoiDung()
+        {
+            return nguoiDungDAO.GetAll();
+        }
+
+        // Lấy người dùng theo mã
         public NguoiDungDTO LayNguoiDungTheoMa(string maNguoiDung)
         {
-      if (string.IsNullOrEmpty(maNguoiDung))
+            if (string.IsNullOrEmpty(maNguoiDung))
             {
-     throw new ArgumentException("Mã người dùng không hợp lệ.");
-}
-       return nguoiDungDAO.GetById(maNguoiDung);
+                throw new ArgumentException("Mã người dùng không hợp lệ.");
+            }
+            return nguoiDungDAO.GetById(maNguoiDung);
         }
 
-   // Cập nhật người dùng
+        // Cập nhật người dùng
         public bool CapNhatNguoiDung(NguoiDungDTO nguoiDungDTO)
         {
- if (string.IsNullOrEmpty(nguoiDungDTO.MaNguoiDung) ||
-          string.IsNullOrEmpty(nguoiDungDTO.TenDangNhap) ||
-       string.IsNullOrEmpty(nguoiDungDTO.MatKhau) ||
-    string.IsNullOrEmpty(nguoiDungDTO.HoTen) ||
-   string.IsNullOrEmpty(nguoiDungDTO.VaiTro))
-    {
-          throw new ArgumentException("Thông tin người dùng không hợp lệ.");
+            if (string.IsNullOrEmpty(nguoiDungDTO.MaNguoiDung) ||
+                string.IsNullOrEmpty(nguoiDungDTO.TenDangNhap) ||
+                string.IsNullOrEmpty(nguoiDungDTO.MatKhau) ||
+                string.IsNullOrEmpty(nguoiDungDTO.HoTen) ||
+                string.IsNullOrEmpty(nguoiDungDTO.VaiTro))
+            {
+                throw new ArgumentException("Thông tin người dùng không hợp lệ.");
             }
 
-       return nguoiDungDAO.Update(nguoiDungDTO);
+            return nguoiDungDAO.Update(nguoiDungDTO);
         }
 
         // Xóa người dùng
         public bool XoaNguoiDung(string maNguoiDung)
         {
             if (string.IsNullOrEmpty(maNguoiDung))
-  {
-          throw new ArgumentException("Mã người dùng không hợp lệ.");
-  }
-         return nguoiDungDAO.Delete(maNguoiDung);
+            {
+                throw new ArgumentException("Mã người dùng không hợp lệ.");
+            }
+            return nguoiDungDAO.Delete(maNguoiDung);
         }
 
         // Tìm kiếm người dùng
         public List<NguoiDungDTO> TimKiemNguoiDung(string keyword)
         {
-if (string.IsNullOrEmpty(keyword))
-     {
-  return LayDanhSachNguoiDung();
-   }
-   return nguoiDungDAO.Search(keyword);
-      }
+            if (string.IsNullOrEmpty(keyword))
+            {
+                return LayDanhSachNguoiDung();
+            }
+            return nguoiDungDAO.Search(keyword);
+        }
     }
 }

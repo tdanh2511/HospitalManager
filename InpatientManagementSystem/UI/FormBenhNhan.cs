@@ -14,6 +14,7 @@ namespace Quan_li_benh_vien
         public FormBenhNhan()
         {
             InitializeComponent();
+            this.Load += FormBenhNhan_Load;
         }
 
         private void FormBenhNhan_Load(object sender, EventArgs e)

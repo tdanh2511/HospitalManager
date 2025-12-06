@@ -70,7 +70,7 @@ namespace Quan_li_benh_vien
             this.panelTop.Controls.Add(this.lblTitle);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(2);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(1016, 49);
             this.panelTop.TabIndex = 4;
@@ -105,9 +105,9 @@ namespace Quan_li_benh_vien
             this.groupBoxBenhNhan.Controls.Add(this.lblBenhNhan);
             this.groupBoxBenhNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBoxBenhNhan.Location = new System.Drawing.Point(15, 61);
-            this.groupBoxBenhNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxBenhNhan.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxBenhNhan.Name = "groupBoxBenhNhan";
-            this.groupBoxBenhNhan.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxBenhNhan.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxBenhNhan.Size = new System.Drawing.Size(866, 176);
             this.groupBoxBenhNhan.TabIndex = 3;
             this.groupBoxBenhNhan.TabStop = false;
@@ -120,7 +120,7 @@ namespace Quan_li_benh_vien
             this.btnTinhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.btnTinhTien.ForeColor = System.Drawing.Color.White;
             this.btnTinhTien.Location = new System.Drawing.Point(615, 23);
-            this.btnTinhTien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTinhTien.Margin = new System.Windows.Forms.Padding(2);
             this.btnTinhTien.Name = "btnTinhTien";
             this.btnTinhTien.Size = new System.Drawing.Size(148, 24);
             this.btnTinhTien.TabIndex = 0;
@@ -130,7 +130,7 @@ namespace Quan_li_benh_vien
             // numBHYT
             // 
             this.numBHYT.Location = new System.Drawing.Point(563, 131);
-            this.numBHYT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numBHYT.Margin = new System.Windows.Forms.Padding(2);
             this.numBHYT.Name = "numBHYT";
             this.numBHYT.ReadOnly = true;
             this.numBHYT.Size = new System.Drawing.Size(75, 23);
@@ -139,7 +139,7 @@ namespace Quan_li_benh_vien
             // txtSoNgay
             // 
             this.txtSoNgay.Location = new System.Drawing.Point(344, 130);
-            this.txtSoNgay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSoNgay.Margin = new System.Windows.Forms.Padding(2);
             this.txtSoNgay.Name = "txtSoNgay";
             this.txtSoNgay.ReadOnly = true;
             this.txtSoNgay.Size = new System.Drawing.Size(131, 23);
@@ -148,7 +148,7 @@ namespace Quan_li_benh_vien
             // txtNgayVao
             // 
             this.txtNgayVao.Location = new System.Drawing.Point(90, 130);
-            this.txtNgayVao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNgayVao.Margin = new System.Windows.Forms.Padding(2);
             this.txtNgayVao.Name = "txtNgayVao";
             this.txtNgayVao.ReadOnly = true;
             this.txtNgayVao.Size = new System.Drawing.Size(174, 23);
@@ -157,7 +157,7 @@ namespace Quan_li_benh_vien
             // txtPhong
             // 
             this.txtPhong.Location = new System.Drawing.Point(562, 64);
-            this.txtPhong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhong.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhong.Name = "txtPhong";
             this.txtPhong.ReadOnly = true;
             this.txtPhong.Size = new System.Drawing.Size(76, 23);
@@ -166,7 +166,7 @@ namespace Quan_li_benh_vien
             // txtCCCD
             // 
             this.txtCCCD.Location = new System.Drawing.Point(343, 64);
-            this.txtCCCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCCCD.Margin = new System.Windows.Forms.Padding(2);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.ReadOnly = true;
             this.txtCCCD.Size = new System.Drawing.Size(132, 23);
@@ -175,7 +175,7 @@ namespace Quan_li_benh_vien
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(90, 64);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.ReadOnly = true;
             this.txtHoTen.Size = new System.Drawing.Size(174, 23);
@@ -186,7 +186,7 @@ namespace Quan_li_benh_vien
             this.cboBenhNhan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBenhNhan.FormattingEnabled = true;
             this.cboBenhNhan.Location = new System.Drawing.Point(90, 24);
-            this.cboBenhNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboBenhNhan.Margin = new System.Windows.Forms.Padding(2);
             this.cboBenhNhan.Name = "cboBenhNhan";
             this.cboBenhNhan.Size = new System.Drawing.Size(511, 24);
             this.cboBenhNhan.TabIndex = 7;
@@ -288,9 +288,9 @@ namespace Quan_li_benh_vien
             this.groupBoxChiTiet.Controls.Add(this.txtBNPhaiDong);
             this.groupBoxChiTiet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBoxChiTiet.Location = new System.Drawing.Point(15, 242);
-            this.groupBoxChiTiet.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxChiTiet.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxChiTiet.Name = "groupBoxChiTiet";
-            this.groupBoxChiTiet.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxChiTiet.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxChiTiet.Size = new System.Drawing.Size(986, 352);
             this.groupBoxChiTiet.TabIndex = 2;
             this.groupBoxChiTiet.TabStop = false;
@@ -308,7 +308,7 @@ namespace Quan_li_benh_vien
             this.colDichVu,
             this.colGiaDV});
             this.dgvDichVu.Location = new System.Drawing.Point(375, 126);
-            this.dgvDichVu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDichVu.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDichVu.Name = "dgvDichVu";
             this.dgvDichVu.ReadOnly = true;
             this.dgvDichVu.RowHeadersWidth = 51;
@@ -343,7 +343,7 @@ namespace Quan_li_benh_vien
             // 
             this.txtTienDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.txtTienDV.Location = new System.Drawing.Point(390, 211);
-            this.txtTienDV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTienDV.Margin = new System.Windows.Forms.Padding(2);
             this.txtTienDV.Name = "txtTienDV";
             this.txtTienDV.ReadOnly = true;
             this.txtTienDV.Size = new System.Drawing.Size(151, 23);
@@ -372,7 +372,7 @@ namespace Quan_li_benh_vien
             this.colSoLuong,
             this.colGiaThuoc});
             this.dgvThuoc.Location = new System.Drawing.Point(15, 126);
-            this.dgvThuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvThuoc.Margin = new System.Windows.Forms.Padding(2);
             this.dgvThuoc.Name = "dgvThuoc";
             this.dgvThuoc.ReadOnly = true;
             this.dgvThuoc.RowHeadersWidth = 51;
@@ -414,7 +414,7 @@ namespace Quan_li_benh_vien
             // 
             this.txtTienThuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.txtTienThuoc.Location = new System.Drawing.Point(30, 211);
-            this.txtTienThuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTienThuoc.Margin = new System.Windows.Forms.Padding(2);
             this.txtTienThuoc.Name = "txtTienThuoc";
             this.txtTienThuoc.ReadOnly = true;
             this.txtTienThuoc.Size = new System.Drawing.Size(151, 23);
@@ -447,7 +447,7 @@ namespace Quan_li_benh_vien
             // 
             this.txtTienPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.txtTienPhong.Location = new System.Drawing.Point(30, 71);
-            this.txtTienPhong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTienPhong.Margin = new System.Windows.Forms.Padding(2);
             this.txtTienPhong.Name = "txtTienPhong";
             this.txtTienPhong.ReadOnly = true;
             this.txtTienPhong.Size = new System.Drawing.Size(151, 23);
@@ -470,7 +470,7 @@ namespace Quan_li_benh_vien
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(15, 240);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(690, 2);
             this.panel1.TabIndex = 11;
@@ -491,7 +491,7 @@ namespace Quan_li_benh_vien
             this.txtTongCong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.txtTongCong.ForeColor = System.Drawing.Color.Red;
             this.txtTongCong.Location = new System.Drawing.Point(412, 245);
-            this.txtTongCong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTongCong.Margin = new System.Windows.Forms.Padding(2);
             this.txtTongCong.Name = "txtTongCong";
             this.txtTongCong.ReadOnly = true;
             this.txtTongCong.Size = new System.Drawing.Size(166, 26);
@@ -514,7 +514,7 @@ namespace Quan_li_benh_vien
             // 
             this.txtBaoHiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.txtBaoHiem.Location = new System.Drawing.Point(412, 274);
-            this.txtBaoHiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBaoHiem.Margin = new System.Windows.Forms.Padding(2);
             this.txtBaoHiem.Name = "txtBaoHiem";
             this.txtBaoHiem.ReadOnly = true;
             this.txtBaoHiem.Size = new System.Drawing.Size(166, 24);
@@ -526,7 +526,7 @@ namespace Quan_li_benh_vien
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(225, 301);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(352, 2);
             this.panel2.TabIndex = 16;
@@ -548,7 +548,7 @@ namespace Quan_li_benh_vien
             this.txtBNPhaiDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
             this.txtBNPhaiDong.ForeColor = System.Drawing.Color.Red;
             this.txtBNPhaiDong.Location = new System.Drawing.Point(338, 305);
-            this.txtBNPhaiDong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBNPhaiDong.Margin = new System.Windows.Forms.Padding(2);
             this.txtBNPhaiDong.Name = "txtBNPhaiDong";
             this.txtBNPhaiDong.ReadOnly = true;
             this.txtBNPhaiDong.Size = new System.Drawing.Size(241, 29);
@@ -564,7 +564,7 @@ namespace Quan_li_benh_vien
             this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnThanhToan.ForeColor = System.Drawing.Color.White;
             this.btnThanhToan.Location = new System.Drawing.Point(358, 607);
-            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThanhToan.Margin = new System.Windows.Forms.Padding(2);
             this.btnThanhToan.Name = "btnThanhToan";
             this.btnThanhToan.Size = new System.Drawing.Size(150, 41);
             this.btnThanhToan.TabIndex = 1;
@@ -579,12 +579,13 @@ namespace Quan_li_benh_vien
             this.btnInHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnInHoaDon.ForeColor = System.Drawing.Color.White;
             this.btnInHoaDon.Location = new System.Drawing.Point(523, 607);
-            this.btnInHoaDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInHoaDon.Margin = new System.Windows.Forms.Padding(2);
             this.btnInHoaDon.Name = "btnInHoaDon";
             this.btnInHoaDon.Size = new System.Drawing.Size(135, 41);
             this.btnInHoaDon.TabIndex = 0;
             this.btnInHoaDon.Text = "🖨️ In hóa đơn";
             this.btnInHoaDon.UseVisualStyleBackColor = false;
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
             // 
             // FormThanhToan
             // 
@@ -598,7 +599,7 @@ namespace Quan_li_benh_vien
             this.Controls.Add(this.groupBoxBenhNhan);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormThanhToan";
             this.panelTop.ResumeLayout(false);
             this.groupBoxBenhNhan.ResumeLayout(false);

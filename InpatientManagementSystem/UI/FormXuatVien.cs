@@ -6,11 +6,16 @@ namespace Quan_li_benh_vien
     public partial class FormXuatVien : Form
     {
         public FormXuatVien()
-     {
-      InitializeComponent();
-   }
+        {
+            InitializeComponent();
+        }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInPhieu_Click(object sender, EventArgs e)
         {
 
         }

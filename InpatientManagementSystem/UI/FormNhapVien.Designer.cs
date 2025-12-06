@@ -78,9 +78,9 @@ protected override void Dispose(bool disposing)
             this.groupBoxBenhNhan.Controls.Add(this.lblCCCD);
             this.groupBoxBenhNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBoxBenhNhan.Location = new System.Drawing.Point(15, 65);
-            this.groupBoxBenhNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxBenhNhan.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxBenhNhan.Name = "groupBoxBenhNhan";
-            this.groupBoxBenhNhan.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxBenhNhan.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxBenhNhan.Size = new System.Drawing.Size(875, 114);
             this.groupBoxBenhNhan.TabIndex = 1;
             this.groupBoxBenhNhan.TabStop = false;
@@ -92,7 +92,7 @@ protected override void Dispose(bool disposing)
             this.btnTimBN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimBN.ForeColor = System.Drawing.Color.White;
             this.btnTimBN.Location = new System.Drawing.Point(292, 25);
-            this.btnTimBN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTimBN.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimBN.Name = "btnTimBN";
             this.btnTimBN.Size = new System.Drawing.Size(84, 25);
             this.btnTimBN.TabIndex = 12;
@@ -102,7 +102,7 @@ protected override void Dispose(bool disposing)
             // txtTimBN
             // 
             this.txtTimBN.Location = new System.Drawing.Point(122, 26);
-            this.txtTimBN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTimBN.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimBN.Name = "txtTimBN";
             this.txtTimBN.Size = new System.Drawing.Size(166, 23);
             this.txtTimBN.TabIndex = 11;
@@ -121,7 +121,7 @@ protected override void Dispose(bool disposing)
             // txtDiaChi
             // 
             this.txtDiaChi.Location = new System.Drawing.Point(530, 81);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.ReadOnly = true;
             this.txtDiaChi.Size = new System.Drawing.Size(256, 23);
@@ -130,7 +130,7 @@ protected override void Dispose(bool disposing)
             // txtSDT
             // 
             this.txtSDT.Location = new System.Drawing.Point(122, 84);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(2);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.ReadOnly = true;
             this.txtSDT.Size = new System.Drawing.Size(166, 23);
@@ -139,7 +139,7 @@ protected override void Dispose(bool disposing)
             // txtNgaySinh
             // 
             this.txtNgaySinh.Location = new System.Drawing.Point(530, 54);
-            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNgaySinh.Margin = new System.Windows.Forms.Padding(2);
             this.txtNgaySinh.Name = "txtNgaySinh";
             this.txtNgaySinh.ReadOnly = true;
             this.txtNgaySinh.Size = new System.Drawing.Size(114, 23);
@@ -148,7 +148,7 @@ protected override void Dispose(bool disposing)
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(122, 54);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.ReadOnly = true;
             this.txtHoTen.Size = new System.Drawing.Size(253, 23);
@@ -157,7 +157,7 @@ protected override void Dispose(bool disposing)
             // txtCCCD
             // 
             this.txtCCCD.Location = new System.Drawing.Point(530, 25);
-            this.txtCCCD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCCCD.Margin = new System.Windows.Forms.Padding(2);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.ReadOnly = true;
             this.txtCCCD.Size = new System.Drawing.Size(114, 23);
@@ -223,9 +223,9 @@ protected override void Dispose(bool disposing)
             this.groupBoxDotDieuTri.Controls.Add(this.lblLyDo);
             this.groupBoxDotDieuTri.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBoxDotDieuTri.Location = new System.Drawing.Point(15, 191);
-            this.groupBoxDotDieuTri.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxDotDieuTri.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxDotDieuTri.Name = "groupBoxDotDieuTri";
-            this.groupBoxDotDieuTri.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxDotDieuTri.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxDotDieuTri.Size = new System.Drawing.Size(875, 146);
             this.groupBoxDotDieuTri.TabIndex = 2;
             this.groupBoxDotDieuTri.TabStop = false;
@@ -234,7 +234,7 @@ protected override void Dispose(bool disposing)
             // numBHYT
             // 
             this.numBHYT.Location = new System.Drawing.Point(112, 114);
-            this.numBHYT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numBHYT.Margin = new System.Windows.Forms.Padding(2);
             this.numBHYT.Name = "numBHYT";
             this.numBHYT.Size = new System.Drawing.Size(90, 23);
             this.numBHYT.TabIndex = 5;
@@ -250,7 +250,7 @@ protected override void Dispose(bool disposing)
             "Khoa Nhi",
             "Khoa Tai Mũi Họng"});
             this.cboKhoa.Location = new System.Drawing.Point(112, 85);
-            this.cboKhoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboKhoa.Margin = new System.Windows.Forms.Padding(2);
             this.cboKhoa.Name = "cboKhoa";
             this.cboKhoa.Size = new System.Drawing.Size(226, 24);
             this.cboKhoa.TabIndex = 4;
@@ -258,7 +258,7 @@ protected override void Dispose(bool disposing)
             // txtLyDo
             // 
             this.txtLyDo.Location = new System.Drawing.Point(112, 28);
-            this.txtLyDo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLyDo.Margin = new System.Windows.Forms.Padding(2);
             this.txtLyDo.Multiline = true;
             this.txtLyDo.Name = "txtLyDo";
             this.txtLyDo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -303,9 +303,9 @@ protected override void Dispose(bool disposing)
             this.groupBoxPhong.Controls.Add(this.dgvPhong);
             this.groupBoxPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBoxPhong.Location = new System.Drawing.Point(15, 349);
-            this.groupBoxPhong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxPhong.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxPhong.Name = "groupBoxPhong";
-            this.groupBoxPhong.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxPhong.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxPhong.Size = new System.Drawing.Size(875, 220);
             this.groupBoxPhong.TabIndex = 3;
             this.groupBoxPhong.TabStop = false;
@@ -326,7 +326,7 @@ protected override void Dispose(bool disposing)
             this.colGiaPhong,
             this.colTrangThai});
             this.dgvPhong.Location = new System.Drawing.Point(8, 24);
-            this.dgvPhong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvPhong.Margin = new System.Windows.Forms.Padding(2);
             this.dgvPhong.MultiSelect = false;
             this.dgvPhong.Name = "dgvPhong";
             this.dgvPhong.ReadOnly = true;
@@ -371,12 +371,13 @@ protected override void Dispose(bool disposing)
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Location = new System.Drawing.Point(377, 578);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(150, 41);
             this.btnLuu.TabIndex = 4;
             this.btnLuu.Text = "✓ Lưu hồ sơ";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // FormNhapVien
             // 
@@ -390,7 +391,7 @@ protected override void Dispose(bool disposing)
             this.Controls.Add(this.groupBoxBenhNhan);
             this.Controls.Add(this.lblTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormNhapVien";
             this.groupBoxBenhNhan.ResumeLayout(false);
             this.groupBoxBenhNhan.PerformLayout();

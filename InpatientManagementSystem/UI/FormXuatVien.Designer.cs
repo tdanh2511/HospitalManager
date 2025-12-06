@@ -45,7 +45,7 @@ private void InitializeComponent()
             this.panelTop.Controls.Add(this.lblTitle);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(2);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(750, 49);
             this.panelTop.TabIndex = 4;
@@ -69,9 +69,9 @@ private void InitializeComponent()
             this.groupBoxDanhSach.Controls.Add(this.dgvBenhNhan);
             this.groupBoxDanhSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBoxDanhSach.Location = new System.Drawing.Point(15, 61);
-            this.groupBoxDanhSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxDanhSach.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxDanhSach.Name = "groupBoxDanhSach";
-            this.groupBoxDanhSach.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxDanhSach.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxDanhSach.Size = new System.Drawing.Size(720, 244);
             this.groupBoxDanhSach.TabIndex = 3;
             this.groupBoxDanhSach.TabStop = false;
@@ -93,7 +93,7 @@ private void InitializeComponent()
             this.colNgayVao,
             this.colDaThanhToan});
             this.dgvBenhNhan.Location = new System.Drawing.Point(8, 24);
-            this.dgvBenhNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvBenhNhan.Margin = new System.Windows.Forms.Padding(2);
             this.dgvBenhNhan.MultiSelect = false;
             this.dgvBenhNhan.Name = "dgvBenhNhan";
             this.dgvBenhNhan.ReadOnly = true;
@@ -153,9 +153,9 @@ private void InitializeComponent()
             this.groupBoxThongTin.Controls.Add(this.lblHoTen);
             this.groupBoxThongTin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.groupBoxThongTin.Location = new System.Drawing.Point(15, 317);
-            this.groupBoxThongTin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxThongTin.Margin = new System.Windows.Forms.Padding(2);
             this.groupBoxThongTin.Name = "groupBoxThongTin";
-            this.groupBoxThongTin.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxThongTin.Padding = new System.Windows.Forms.Padding(2);
             this.groupBoxThongTin.Size = new System.Drawing.Size(720, 126);
             this.groupBoxThongTin.TabIndex = 2;
             this.groupBoxThongTin.TabStop = false;
@@ -166,7 +166,7 @@ private void InitializeComponent()
             this.txtTongChiPhi.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.txtTongChiPhi.ForeColor = System.Drawing.Color.Red;
             this.txtTongChiPhi.Location = new System.Drawing.Point(133, 94);
-            this.txtTongChiPhi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTongChiPhi.Margin = new System.Windows.Forms.Padding(2);
             this.txtTongChiPhi.Name = "txtTongChiPhi";
             this.txtTongChiPhi.ReadOnly = true;
             this.txtTongChiPhi.Size = new System.Drawing.Size(151, 24);
@@ -176,7 +176,7 @@ private void InitializeComponent()
             // txtSoNgay
             // 
             this.txtSoNgay.Location = new System.Drawing.Point(465, 62);
-            this.txtSoNgay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSoNgay.Margin = new System.Windows.Forms.Padding(2);
             this.txtSoNgay.Name = "txtSoNgay";
             this.txtSoNgay.ReadOnly = true;
             this.txtSoNgay.Size = new System.Drawing.Size(91, 23);
@@ -185,7 +185,7 @@ private void InitializeComponent()
             // txtNgayVao
             // 
             this.txtNgayVao.Location = new System.Drawing.Point(465, 32);
-            this.txtNgayVao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNgayVao.Margin = new System.Windows.Forms.Padding(2);
             this.txtNgayVao.Name = "txtNgayVao";
             this.txtNgayVao.ReadOnly = true;
             this.txtNgayVao.Size = new System.Drawing.Size(114, 23);
@@ -194,7 +194,7 @@ private void InitializeComponent()
             // txtPhong
             // 
             this.txtPhong.Location = new System.Drawing.Point(112, 62);
-            this.txtPhong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhong.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhong.Name = "txtPhong";
             this.txtPhong.ReadOnly = true;
             this.txtPhong.Size = new System.Drawing.Size(114, 23);
@@ -203,7 +203,7 @@ private void InitializeComponent()
             // txtHoTen
             // 
             this.txtHoTen.Location = new System.Drawing.Point(112, 32);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.ReadOnly = true;
             this.txtHoTen.Size = new System.Drawing.Size(226, 23);
@@ -268,12 +268,13 @@ private void InitializeComponent()
             this.btnInPhieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnInPhieu.ForeColor = System.Drawing.Color.White;
             this.btnInPhieu.Location = new System.Drawing.Point(390, 455);
-            this.btnInPhieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInPhieu.Margin = new System.Windows.Forms.Padding(2);
             this.btnInPhieu.Name = "btnInPhieu";
             this.btnInPhieu.Size = new System.Drawing.Size(135, 41);
             this.btnInPhieu.TabIndex = 0;
             this.btnInPhieu.Text = "🖨️ In phiếu XV";
             this.btnInPhieu.UseVisualStyleBackColor = false;
+            this.btnInPhieu.Click += new System.EventHandler(this.btnInPhieu_Click);
             // 
             // btnXacNhan
             // 
@@ -283,7 +284,7 @@ private void InitializeComponent()
             this.btnXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.btnXacNhan.ForeColor = System.Drawing.Color.White;
             this.btnXacNhan.Location = new System.Drawing.Point(195, 455);
-            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(177, 41);
             this.btnXacNhan.TabIndex = 5;
@@ -303,7 +304,7 @@ private void InitializeComponent()
             this.Controls.Add(this.groupBoxDanhSach);
             this.Controls.Add(this.panelTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormXuatVien";
             this.panelTop.ResumeLayout(false);
             this.groupBoxDanhSach.ResumeLayout(false);

@@ -54,7 +54,7 @@ namespace InpatientManagementSystem.DAO
                 using (MySqlConnection conn = dbConnection.GetConnection())
                 {
                     conn.Open();
-                    string query = "SELECT * FROM benhnhan ORDER BY MaBenhNhan DESC";
+                    string query = "SELECT * FROM benhnhan ORDER BY MaBenhNhan ASC";
                     MySqlCommand cmd = new MySqlCommand(query, conn);
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())

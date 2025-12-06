@@ -20,9 +20,9 @@ namespace InpatientManagementSystem.DAO
                     conn.Open();
 
                     string query = @"INSERT INTO phong 
-                        (TenPhong, LoaiPhong, Tang, SoGiuong, SoGiuongTrong, GiaTien, TrangThai, MoTa)
-                        VALUES
-                        (@TenPhong, @LoaiPhong, @Tang, @SoGiuong, @SoGiuongTrong, @GiaTien, @TrangThai, @MoTa)";
+                    (TenPhong, LoaiPhong, Tang, SoGiuong, SoGiuongTrong, GiaTien, TrangThai, MoTa)
+                    VALUES
+                    (@TenPhong, @LoaiPhong, @Tang, @SoGiuong, @SoGiuongTrong, @GiaTien, @TrangThai, @MoTa)";
 
                     MySqlCommand cmd = new MySqlCommand(query, conn);
 

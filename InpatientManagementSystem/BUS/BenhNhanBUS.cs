@@ -13,7 +13,7 @@ namespace InpatientManagementSystem.BUS
         private BenhNhanDAO benhNhanDAO = new BenhNhanDAO();
 
         // Thêm bệnh nhân
-        public bool ThemBenhNhan(BenhNhanDTO benhNhanDTO) 
+        public bool ThemBenhNhan(BenhNhanDTO benhNhanDTO)
         {
             if (string.IsNullOrEmpty(benhNhanDTO.HoTen) ||
                 benhNhanDTO.NgaySinh == default(DateTime) ||

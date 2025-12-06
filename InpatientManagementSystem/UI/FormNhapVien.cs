@@ -5,12 +5,17 @@ namespace Quan_li_benh_vien
 {
     public partial class FormNhapVien : Form
     {
-     public FormNhapVien()
+        public FormNhapVien()
         {
             InitializeComponent();
         }
 
         private void lblTimBN_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
         {
 
         }

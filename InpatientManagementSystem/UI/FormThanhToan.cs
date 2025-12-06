@@ -6,9 +6,9 @@ namespace Quan_li_benh_vien
     public partial class FormThanhToan : Form
     {
         public FormThanhToan()
-      {
-     InitializeComponent();
-   }
+        {
+            InitializeComponent();
+        }
 
         private void groupBoxChiTiet_Enter(object sender, EventArgs e)
         {
@@ -16,6 +16,11 @@ namespace Quan_li_benh_vien
         }
 
         private void lblPhong_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
         {
 
         }

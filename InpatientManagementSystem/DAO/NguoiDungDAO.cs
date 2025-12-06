@@ -11,220 +11,220 @@ namespace InpatientManagementSystem.DAO
         private DBConnection dbConnection = new DBConnection();
 
         // Thêm người dùng
-  public bool Insert(NguoiDungDTO nd)
+        public bool Insert(NguoiDungDTO nd)
         {
-          try
-          {
-                using (MySqlConnection conn = dbConnection.GetConnection())
-             {
-             conn.Open();
-
-           string query = @"INSERT INTO nguoidung 
-        (TenDangNhap, MatKhau, HoTen, VaiTro, Email, SoDienThoai, TrangThai)
-      VALUES
-     (@TenDangNhap, @MatKhau, @HoTen, @VaiTro, @Email, @SoDienThoai, @TrangThai)";
-
-             MySqlCommand cmd = new MySqlCommand(query, conn);
-
-         cmd.Parameters.AddWithValue("@TenDangNhap", nd.TenDangNhap);
-         cmd.Parameters.AddWithValue("@MatKhau", nd.MatKhau);
-      cmd.Parameters.AddWithValue("@HoTen", nd.HoTen);
-          cmd.Parameters.AddWithValue("@VaiTro", nd.VaiTro);
-  cmd.Parameters.AddWithValue("@Email", nd.Email);
-    cmd.Parameters.AddWithValue("@SoDienThoai", nd.SoDienThoai);
-      cmd.Parameters.AddWithValue("@TrangThai", nd.TrangThai);
-
-       return cmd.ExecuteNonQuery() > 0;
-        }
-            }
-    catch (Exception ex)
+            try
             {
-     throw new Exception("Lỗi thêm người dùng: " + ex.Message);
+                using (MySqlConnection conn = dbConnection.GetConnection())
+                {
+                    conn.Open();
+
+                    string query = @"INSERT INTO nguoidung 
+                    (TenDangNhap, MatKhau, HoTen, VaiTro, Email, SoDienThoai, TrangThai)
+                    VALUES
+                    (@TenDangNhap, @MatKhau, @HoTen, @VaiTro, @Email, @SoDienThoai, @TrangThai)";
+
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                    cmd.Parameters.AddWithValue("@TenDangNhap", nd.TenDangNhap);
+                    cmd.Parameters.AddWithValue("@MatKhau", nd.MatKhau);
+                    cmd.Parameters.AddWithValue("@HoTen", nd.HoTen);
+                    cmd.Parameters.AddWithValue("@VaiTro", nd.VaiTro);
+                    cmd.Parameters.AddWithValue("@Email", nd.Email);
+                    cmd.Parameters.AddWithValue("@SoDienThoai", nd.SoDienThoai);
+                    cmd.Parameters.AddWithValue("@TrangThai", nd.TrangThai);
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi thêm người dùng: " + ex.Message);
             }
         }
 
         // Lấy tất cả người dùng
         public List<NguoiDungDTO> GetAll()
- {
-          List<NguoiDungDTO> list = new List<NguoiDungDTO>();
-   try
-  {
-      using (MySqlConnection conn = dbConnection.GetConnection())
-   {
-         conn.Open();
-            string query = "SELECT * FROM nguoidung ORDER BY MaNguoiDung DESC";
-        MySqlCommand cmd = new MySqlCommand(query, conn);
+        {
+            List<NguoiDungDTO> list = new List<NguoiDungDTO>();
+            try
+            {
+                using (MySqlConnection conn = dbConnection.GetConnection())
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM nguoidung ORDER BY MaNguoiDung DESC";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
 
-       using (MySqlDataReader reader = cmd.ExecuteReader())
-       {
-      while (reader.Read())
-      {
-    NguoiDungDTO nd = new NguoiDungDTO
-         {
-     MaNguoiDung = reader["MaNguoiDung"].ToString(),
-        TenDangNhap = reader["TenDangNhap"].ToString(),
-  MatKhau = reader["MatKhau"].ToString(),
-       HoTen = reader["HoTen"].ToString(),
-    VaiTro = reader["VaiTro"].ToString(),
-           Email = reader["Email"].ToString(),
-             SoDienThoai = reader["SoDienThoai"].ToString(),
-           TrangThai = Convert.ToBoolean(reader["TrangThai"]),
-    NgayTao = Convert.ToDateTime(reader["NgayTao"])
-          };
-          list.Add(nd);
-       }
-       }
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            NguoiDungDTO nd = new NguoiDungDTO
+                            {
+                                MaNguoiDung = reader["MaNguoiDung"].ToString(),
+                                TenDangNhap = reader["TenDangNhap"].ToString(),
+                                MatKhau = reader["MatKhau"].ToString(),
+                                HoTen = reader["HoTen"].ToString(),
+                                VaiTro = reader["VaiTro"].ToString(),
+                                Email = reader["Email"].ToString(),
+                                SoDienThoai = reader["SoDienThoai"].ToString(),
+                                TrangThai = Convert.ToBoolean(reader["TrangThai"]),
+                                NgayTao = Convert.ToDateTime(reader["NgayTao"])
+                            };
+                            list.Add(nd);
+                        }
+                    }
                 }
             }
-    catch (Exception ex)
-       {
-    throw new Exception("Lỗi lấy danh sách người dùng: " + ex.Message);
-  }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi lấy danh sách người dùng: " + ex.Message);
+            }
             return list;
         }
 
-    // Lấy người dùng theo mã
+        // Lấy người dùng theo mã
         public NguoiDungDTO GetById(string maNguoiDung)
-   {
+        {
             try
-          {
-         using (MySqlConnection conn = dbConnection.GetConnection())
+            {
+                using (MySqlConnection conn = dbConnection.GetConnection())
                 {
                     conn.Open();
-   string query = "SELECT * FROM nguoidung WHERE MaNguoiDung = @MaNguoiDung";
-  MySqlCommand cmd = new MySqlCommand(query, conn);
-   cmd.Parameters.AddWithValue("@MaNguoiDung", maNguoiDung);
+                    string query = "SELECT * FROM nguoidung WHERE MaNguoiDung = @MaNguoiDung";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaNguoiDung", maNguoiDung);
 
-          using (MySqlDataReader reader = cmd.ExecuteReader())
-     {
- if (reader.Read())
-      {
-     return new NguoiDungDTO
-  {
-      MaNguoiDung = reader["MaNguoiDung"].ToString(),
-        TenDangNhap = reader["TenDangNhap"].ToString(),
-        MatKhau = reader["MatKhau"].ToString(),
-HoTen = reader["HoTen"].ToString(),
-        VaiTro = reader["VaiTro"].ToString(),
-              Email = reader["Email"].ToString(),
-      SoDienThoai = reader["SoDienThoai"].ToString(),
-     TrangThai = Convert.ToBoolean(reader["TrangThai"]),
- NgayTao = Convert.ToDateTime(reader["NgayTao"])
-     };
-        }
-        }
-        }
-}
-         catch (Exception ex)
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            return new NguoiDungDTO
+                            {
+                                MaNguoiDung = reader["MaNguoiDung"].ToString(),
+                                TenDangNhap = reader["TenDangNhap"].ToString(),
+                                MatKhau = reader["MatKhau"].ToString(),
+                                HoTen = reader["HoTen"].ToString(),
+                                VaiTro = reader["VaiTro"].ToString(),
+                                Email = reader["Email"].ToString(),
+                                SoDienThoai = reader["SoDienThoai"].ToString(),
+                                TrangThai = Convert.ToBoolean(reader["TrangThai"]),
+                                NgayTao = Convert.ToDateTime(reader["NgayTao"])
+                            };
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
             {
-        throw new Exception("Lỗi lấy thông tin người dùng: " + ex.Message);
-  }
-      return null;
+                throw new Exception("Lỗi lấy thông tin người dùng: " + ex.Message);
+            }
+            return null;
         }
 
         // Cập nhật người dùng
         public bool Update(NguoiDungDTO nd)
         {
             try
-{
-       using (MySqlConnection conn = dbConnection.GetConnection())
-           {
-    conn.Open();
-           string query = @"UPDATE nguoidung SET 
-          TenDangNhap = @TenDangNhap, 
-       MatKhau = @MatKhau, 
-   HoTen = @HoTen, 
-  VaiTro = @VaiTro, 
-   Email = @Email, 
-      SoDienThoai = @SoDienThoai, 
-          TrangThai = @TrangThai
-         WHERE MaNguoiDung = @MaNguoiDung";
+            {
+                using (MySqlConnection conn = dbConnection.GetConnection())
+                {
+                    conn.Open();
+                    string query = @"UPDATE nguoidung SET 
+                    TenDangNhap = @TenDangNhap, 
+                    MatKhau = @MatKhau, 
+                    HoTen = @HoTen, 
+                    VaiTro = @VaiTro, 
+                    Email = @Email, 
+                    SoDienThoai = @SoDienThoai, 
+                    TrangThai = @TrangThai
+                    WHERE MaNguoiDung = @MaNguoiDung";
 
-  MySqlCommand cmd = new MySqlCommand(query, conn);
-  cmd.Parameters.AddWithValue("@MaNguoiDung", nd.MaNguoiDung);
-       cmd.Parameters.AddWithValue("@TenDangNhap", nd.TenDangNhap);
-     cmd.Parameters.AddWithValue("@MatKhau", nd.MatKhau);
-          cmd.Parameters.AddWithValue("@HoTen", nd.HoTen);
-        cmd.Parameters.AddWithValue("@VaiTro", nd.VaiTro);
-       cmd.Parameters.AddWithValue("@Email", nd.Email);
- cmd.Parameters.AddWithValue("@SoDienThoai", nd.SoDienThoai);
-        cmd.Parameters.AddWithValue("@TrangThai", nd.TrangThai);
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaNguoiDung", nd.MaNguoiDung);
+                    cmd.Parameters.AddWithValue("@TenDangNhap", nd.TenDangNhap);
+                    cmd.Parameters.AddWithValue("@MatKhau", nd.MatKhau);
+                    cmd.Parameters.AddWithValue("@HoTen", nd.HoTen);
+                    cmd.Parameters.AddWithValue("@VaiTro", nd.VaiTro);
+                    cmd.Parameters.AddWithValue("@Email", nd.Email);
+                    cmd.Parameters.AddWithValue("@SoDienThoai", nd.SoDienThoai);
+                    cmd.Parameters.AddWithValue("@TrangThai", nd.TrangThai);
 
-       return cmd.ExecuteNonQuery() > 0;
- }
-}
-     catch (Exception ex)
-      {
-          throw new Exception("Lỗi cập nhật người dùng: " + ex.Message);
-    }
-      }
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi cập nhật người dùng: " + ex.Message);
+            }
+        }
 
         // Xóa người dùng
         public bool Delete(string maNguoiDung)
         {
             try
-      {
-         using (MySqlConnection conn = dbConnection.GetConnection())
-  {
-        conn.Open();
-    string query = "DELETE FROM nguoidung WHERE MaNguoiDung = @MaNguoiDung";
-    MySqlCommand cmd = new MySqlCommand(query, conn);
-     cmd.Parameters.AddWithValue("@MaNguoiDung", maNguoiDung);
+            {
+                using (MySqlConnection conn = dbConnection.GetConnection())
+                {
+                    conn.Open();
+                    string query = "DELETE FROM nguoidung WHERE MaNguoiDung = @MaNguoiDung";
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MaNguoiDung", maNguoiDung);
 
-return cmd.ExecuteNonQuery() > 0;
-      }
-}
-         catch (Exception ex)
-        {
-   throw new Exception("Lỗi xóa người dùng: " + ex.Message);
-         }
-      }
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi xóa người dùng: " + ex.Message);
+            }
+        }
 
-    // Tìm kiếm người dùng
+        // Tìm kiếm người dùng
         public List<NguoiDungDTO> Search(string keyword)
         {
             List<NguoiDungDTO> list = new List<NguoiDungDTO>();
-     try
-  {
-     using (MySqlConnection conn = dbConnection.GetConnection())
-     {
-       conn.Open();
-         string query = @"SELECT * FROM nguoidung 
-      WHERE HoTen LIKE @keyword 
-        OR TenDangNhap LIKE @keyword 
-        OR Email LIKE @keyword 
-    OR VaiTro LIKE @keyword
-    ORDER BY MaNguoiDung DESC";
+            try
+            {
+                using (MySqlConnection conn = dbConnection.GetConnection())
+                {
+                    conn.Open();
+                    string query = @"SELECT * FROM nguoidung 
+                    WHERE HoTen LIKE @keyword 
+                    OR TenDangNhap LIKE @keyword 
+                    OR Email LIKE @keyword 
+                    OR VaiTro LIKE @keyword
+                    ORDER BY MaNguoiDung DESC";
 
-           MySqlCommand cmd = new MySqlCommand(query, conn);
-            cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
+                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@keyword", "%" + keyword + "%");
 
-          using (MySqlDataReader reader = cmd.ExecuteReader())
-       {
-           while (reader.Read())
-             {
-            NguoiDungDTO nd = new NguoiDungDTO
-  {
-             MaNguoiDung = reader["MaNguoiDung"].ToString(),
-       TenDangNhap = reader["TenDangNhap"].ToString(),
-  MatKhau = reader["MatKhau"].ToString(),
-        HoTen = reader["HoTen"].ToString(),
-     VaiTro = reader["VaiTro"].ToString(),
-    Email = reader["Email"].ToString(),
-             SoDienThoai = reader["SoDienThoai"].ToString(),
-   TrangThai = Convert.ToBoolean(reader["TrangThai"]),
-           NgayTao = Convert.ToDateTime(reader["NgayTao"])
-          };
-     list.Add(nd);
-  }
-         }
-      }
-        }
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            NguoiDungDTO nd = new NguoiDungDTO
+                            {
+                                MaNguoiDung = reader["MaNguoiDung"].ToString(),
+                                TenDangNhap = reader["TenDangNhap"].ToString(),
+                                MatKhau = reader["MatKhau"].ToString(),
+                                HoTen = reader["HoTen"].ToString(),
+                                VaiTro = reader["VaiTro"].ToString(),
+                                Email = reader["Email"].ToString(),
+                                SoDienThoai = reader["SoDienThoai"].ToString(),
+                                TrangThai = Convert.ToBoolean(reader["TrangThai"]),
+                                NgayTao = Convert.ToDateTime(reader["NgayTao"])
+                            };
+                            list.Add(nd);
+                        }
+                    }
+                }
+            }
             catch (Exception ex)
-    {
-     throw new Exception("Lỗi tìm kiếm người dùng: " + ex.Message);
-     }
-  return list;
+            {
+                throw new Exception("Lỗi tìm kiếm người dùng: " + ex.Message);
+            }
+            return list;
+        }
     }
-}
 }
